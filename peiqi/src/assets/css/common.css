@@ -1,0 +1,225 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing:border-box;
+}
+html, body {
+    height: 100%;
+    background: #FAFAFE;
+    font-family:"PingFang-SC-Regular";
+}
+/* 清除滚动条 */
+body * ::-webkit-scrollbar {
+    display: none ;
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+    list-style: none;
+    overflow: hidden;
+}
+img {
+    border: none;
+    display: block;
+}
+input, textarea {
+    outline: none;
+    border: none;
+    resize:none ;
+}
+
+.fl {
+    float: left
+}
+.fr {
+    float: right
+}
+.tl {
+    text-align: left;
+}
+.tc {
+    text-align: center
+}
+.tr {
+    text-align: right;
+}
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.flex{
+    display: flex;
+}
+.flexc{
+    display: flex;
+    justify-content: space-between;
+}
+/* 横向拖动 */
+.overx{
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+/*弹性布局兼容*/
+.flex {
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex_wrap {
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex_nwrap {
+	-webkit-flex-wrap: nowrap;
+	-moz-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	-o-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.flex_center {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+}
+
+.flex_end {
+	-webkit-box-pack: flex-end;
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+	-ms-justify-content: flex-end;
+	-o-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.space-between {
+	-webkit-box-pack: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.flex_1 {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.space-around {
+	-webkit-box-pack: space-around;
+	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
+	-o-justify-content: space-around;
+	justify-content: space-around;
+}
+
+ .align-items { /*在flex当前容器中纵轴中的位置如果是文字必须包裹在span之中 */
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+}
+.align-content-stretch{
+    -webkit-box-align: stretch;
+	-webkit-align-content: stretch;
+	-moz-align-content: stretch;
+	-ms-align-content: stretch;
+	-o-align-content: stretch;
+	align-content: stretch;
+}
+.align-content-center{
+    -webkit-box-align: center;
+	-webkit-align-content: center;
+	-moz-align-content: center;
+	-ms-align-content: center;
+	-o-align-content: center;
+	align-content: center;
+}
+.transform-center {
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+.transition {
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/* 一行根据宽度省略多余字体 */
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ellipsis2 {  /* 溢出隐藏 */
+	overflow:hidden;
+	text-overflow: ellipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+}
+/* 常规头部 */
+.head{
+    width: 100%;
+    height: .88rem;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    line-height: .88rem;
+    z-index: 1;
+}
+.head i{
+    color: #aaa;
+    margin-left: .26rem;
+}
+.head p{
+    font-size: .4rem;
+    color: #333;
+    font-weight: bold;
+    margin-left: .6rem;
+}
+.head span{
+    font-size: .28rem;
+    color: #333;
+    margin-right: .3rem;
+}
+/* 蒙版 */
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    opacity:0.55;
+    z-index: 1;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
